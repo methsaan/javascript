@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> simple calculator</title>
+	<style type="text/css">
+		h1 {color: orangered; font-family: times; font-size: 2em;}
+		h2 {color: blue; font-family: times; font-size: 2em;}
+		#x {color: springgreen; font-family: helvetica; font-size: 2em;}
+		#y {color: goldenrod; font-family: helvetica; font-size: 2em;}
+		#op {color: purple; font-family: helvetica; font-size: 2em;}
+	</style>
+</head>
+<body>
+<h1> Advanced calculator with styles </h1>
+<br />
+<h2> First number </h2>
+<button type="button" onclick="onex()" id="x">1</button>
+<button type="button" onclick="twox()" id="x">2</button>
+<button type="button" onclick="threex()"id="x">3</button>
+<br />
+<button type="button" onclick="fourx()" id="x">4</button>
+<button type="button" onclick="fivex()" id="x">5</button>
+<button type="button" onclick="sixx()" id="x">6</button>
+<br />
+<button type="button" onclick="sevenx()" id="x">7</button>
+<button type="button" onclick="eightx()" id="x">8</button>
+<button type="button" onclick="ninex()" id="x">9</button>
+<br />
+<button type="button" onclick="zerox()" id="x">0</button>
+<button type="button" onclick="dotx()" id="x">.</button>
+<button type="button" onclick="negx()" id="x">+/-</button>
+<br />
+<button type="button" onclick="refreshx()" id="x">refresh</button>
+<br />
+<h2> Second number </h2>
+<button type="button" onclick="oney()" id="y">1</button>
+<button type="button" onclick="twoy()" id="y">2</button>
+<button type="button" onclick="threey()" id="y">3</button>
+<br />
+<button type="button" onclick="foury()" id="y">4</button>
+<button type="button" onclick="fivey()" id="y">5</button>
+<button type="button" onclick="sixy()" id="y">6</button>
+<br />
+<button type="button" onclick="seveny()" id="y">7</button>
+<button type="button" onclick="eighty()" id="y">8</button>
+<button type="button" onclick="niney()" id="y">9</button>
+<br />
+<button type="button" onclick="zeroy()" id="y">0</button>
+<button type="button" onclick="doty()" id="y">.</button>
+<button type="button" onclick="negy()" id="y">+/-</button>
+<br />
+<button type="button" onclick="refreshy()" id="y">refresh</button>
+<br />
+<h2> Operations </h2>
+<button type="button" onclick="add()" id="op">+</button>
+<button type="button" onclick="sub()" id="op">-</button>
+<button type="button" onclick="mul()" id="op">x</button>
+<button type="button" onclick="div()" id="op">/</button>
+<button type="button" onclick="mod()" id="op">%</button>
+<script>
+var x = "";
+var y = "";
+function onex() {
+	x = x + "1";
+}
+function twox() {
+	x = x + "2";
+}
+function threex() {
+	x = x + "3";
+}
+function fourx() {
+	x = x + "4";
+}
+function fivex() {
+	x = x + "5";
+}
+function sixx() {
+	x = x + "6";
+}
+function sevenx() {
+	x = x + "7";
+}
+function eightx() {
+	x = x + "8";
+}
+function ninex() {
+	x = x + "9";
+}
+function zerox() {
+	x = x + "0";
+}
+function dotx() {
+	x = x + ".";
+}
+function refreshx() {
+	x = "";
+}
+function negx() {
+	var z = x * 2;
+	x = x - z;
+}
+function oney() {
+	y = y + "1";
+}
+function twoy() {
+	y = y + "2";
+}
+function threey() {
+	y = y + "3";
+}
+function foury() {
+	y = y + "4";
+}
+function fivey() {
+	y = y + "5";
+}
+function sixy() {
+	y = y + "6";
+}
+function seveny() {
+	y = y + "7";
+}
+function eighty() {
+	y = y + "8";
+}
+function niney() {
+	y = y + "9";
+}
+function zeroy() {
+	y = y + "0";
+}
+function doty() {
+	y = y + ".";
+}
+function negy() {
+	var z = y * 2;
+	y = y - z;
+}
+function refreshy() {
+	y = "";
+}
+function add() {
+	alert(x + " + " + y + " = " + (parseFloat(x) + parseFloat(y)));
+	x = "";
+	y = "";
+}
+function sub() {
+	alert(x + " - " + y + " = " + (parseFloat(x) - parseFloat(y)));
+	x = "";
+	y = "";
+}
+function mul() {
+	alert(x + " x " + y + " = " + (parseFloat(x) * parseFloat(y)));
+	x = "";
+	y = "";
+}
+function div() {
+	alert(x + " / " + y + " = " + (parseFloat(x) / parseFloat(y)));
+	x = "";
+	y = "";
+}
+function mod() {
+	alert(x + " % " + y + " = " + (parseFloat(x) % parseFloat(y)));
+	x = "";
+	y = "";
+}
+</script>
+</body>
+</html>

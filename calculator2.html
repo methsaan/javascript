@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> simple calculator</title>
+</head>
+<body>
+<h1> Advanced calculator </h1>
+<br />
+<h3> First number </h3>
+<button type="button" onclick="onex()">1</button>
+<button type="button" onclick="twox()">2</button>
+<button type="button" onclick="threex()">3</button>
+<br />
+<button type="button" onclick="fourx()">4</button>
+<button type="button" onclick="fivex()">5</button>
+<button type="button" onclick="sixx()">6</button>
+<br />
+<button type="button" onclick="sevenx()">7</button>
+<button type="button" onclick="eightx()">8</button>
+<button type="button" onclick="ninex()">9</button>
+<br />
+<button type="button" onclick="zerox()">0</button>
+<button type="button" onclick="dotx()">.</button>
+<button type="button" onclick="negx()">+/-</button>
+<br />
+<button type="button" onclick="refreshx()">refresh</button>
+<br />
+<h3> Second number </h3>
+<button type="button" onclick="oney()">1</button>
+<button type="button" onclick="twoy()">2</button>
+<button type="button" onclick="threey()">3</button>
+<br />
+<button type="button" onclick="foury()">4</button>
+<button type="button" onclick="fivey()">5</button>
+<button type="button" onclick="sixy()">6</button>
+<br />
+<button type="button" onclick="seveny()">7</button>
+<button type="button" onclick="eighty()">8</button>
+<button type="button" onclick="niney()">9</button>
+<br />
+<button type="button" onclick="zeroy()">0</button>
+<button type="button" onclick="doty()">.</button>
+<button type="button" onclick="negy()">+/-</button>
+<br />
+<button type="button" onclick="refreshy()">refresh</button>
+<br />
+<h3> Operations </h3>
+<button type="button" onclick="add()">+</button>
+<button type="button" onclick="sub()">-</button>
+<button type="button" onclick="mul()">x</button>
+<button type="button" onclick="div()">/</button>
+<button type="button" onclick="mod()">%</button>
+<script>
+var x = "";
+var y = "";
+function onex() {
+	x = x + "1";
+}
+function twox() {
+	x = x + "2";
+}
+function threex() {
+	x = x + "3";
+}
+function fourx() {
+	x = x + "4";
+}
+function fivex() {
+	x = x + "5";
+}
+function sixx() {
+	x = x + "6";
+}
+function sevenx() {
+	x = x + "7";
+}
+function eightx() {
+	x = x + "8";
+}
+function ninex() {
+	x = x + "9";
+}
+function zerox() {
+	x = x + "0";
+}
+function dotx() {
+	x = x + ".";
+}
+function refreshx() {
+	x = "";
+}
+function negx() {
+	var z = x * 2;
+	x = x - z;
+}
+function oney() {
+	y = y + "1";
+}
+function twoy() {
+	y = y + "2";
+}
+function threey() {
+	y = y + "3";
+}
+function foury() {
+	y = y + "4";
+}
+function fivey() {
+	y = y + "5";
+}
+function sixy() {
+	y = y + "6";
+}
+function seveny() {
+	y = y + "7";
+}
+function eighty() {
+	y = y + "8";
+}
+function niney() {
+	y = y + "9";
+}
+function zeroy() {
+	y = y + "0";
+}
+function doty() {
+	y = y + ".";
+}
+function negy() {
+	var z = y * 2;
+	y = y - z;
+}
+function refreshy() {
+	y = "";
+}
+function add() {
+	alert(x + " + " + y + " = " + (parseFloat(x) + parseFloat(y)));
+	x = "";
+	y = "";
+}
+function sub() {
+	alert(x + " - " + y + " = " + (parseFloat(x) - parseFloat(y)));
+	x = "";
+	y = "";
+}
+function mul() {
+	alert(x + " x " + y + " = " + (parseFloat(x) * parseFloat(y)));
+	x = "";
+	y = "";
+}
+function div() {
+	alert(x + " / " + y + " = " + (parseFloat(x) / parseFloat(y)));
+	x = "";
+	y = "";
+}
+function mod() {
+	alert(x + " % " + y + " = " + (parseFloat(x) % parseFloat(y)));
+	x = "";
+	y = "";
+}
+</script>
+</body>
+</html>
