@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> simple calculator</title>
+	<style type="text/css">
+		button {color: orangered; font-family: times; font-size: 3em; }
+		h1 {color: blue; font-family: times; font-size: 3em; }
+	</style>
+</head>
+<body>
+<h1> basic calculator </h1>
+<button type="button" onclick="add()">+</button>
+<button type="button" onclick="sub()">-</button>
+<button type="button" onclick="mul()">x</button>
+<button type="button" onclick="div()">/</button>
+<script>
+var x = prompt("Enter first number:")
+var y = prompt("Enter second number:")
+function add() {
+	alert(parseFloat(x) + parseFloat(y));
+}
+function sub() {
+	alert(x - y);
+}
+function mul() {
+	alert(x * y);
+}
+function div() {
+	alert(x / y);
+}
+</script>
+</body>
+</html>
