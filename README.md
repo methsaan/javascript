@@ -1,3 +1,3 @@
-# javascript
-sample simple programs
-run on nginx or python web server
+#javascript
+echo "sample simple programs"
+echo "run on nginx or python web server"
